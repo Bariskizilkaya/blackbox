@@ -1,3 +1,5 @@
+//gcc override.c -o override.so -shared -fPIC -ldl
+
 #define _GNU_SOURCE
 #include <stdio.h>
 #include <dlfcn.h>
