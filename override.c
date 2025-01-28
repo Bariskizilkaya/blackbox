@@ -1,5 +1,10 @@
 //gcc override.c -o override.so -shared -fPIC -ldl
-
+/*
+void __uClibc_main(void *main, int argc, char** argv) {
+    // Harness code, e.g. call the function parser_append
+    printf("My custom __uClibc_main was called!");
+}
+  */
 #define _GNU_SOURCE
 #include <stdio.h>
 #include <dlfcn.h>
