@@ -1,7 +1,7 @@
 # blackbox
 
 # Put a breakpoint by gdb to the function and close the aslr
-
+#### mips-linux-gnu-gcc -o harness harness.c -L$(pwd) -lfuzz
 qemu-x86_64-static -E LD_PRELOAD=./override.so test
 
 sudo chroot . ./qemu-mips-static -g 1234 -E LD_PRELOAD=./override.so -E LD
