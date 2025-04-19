@@ -1,3 +1,4 @@
+#Executable to library
 import struct
 
 def modify_elf_type(filename, new_type):
